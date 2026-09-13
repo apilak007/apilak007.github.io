@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Apilak Thongthaisong</title>
 
   <style>
@@ -23,72 +24,129 @@
       padding: 30px;
     }
 
+    /* ===== HEADER ===== */
+
     .hero {
-      padding: 50px 40px;
+      display: flex;
+      align-items: center;
+      gap: 35px;
+
+      padding: 45px;
+      margin-bottom: 25px;
+
+      background: #101a2c;
       border: 1px solid #26364f;
       border-radius: 30px;
-      background: #101a2c;
-      margin-bottom: 25px;
+    }
+
+    .profile {
+      width: 150px;
+      height: 150px;
+
+      object-fit: cover;
+
+      border-radius: 50%;
+      border: 3px solid #38bdf8;
     }
 
     .hero h1 {
-      font-size: 45px;
-      margin: 0 0 15px;
+      margin: 0;
+      font-size: 42px;
       color: #38bdf8;
     }
 
     .hero p {
-      font-size: 20px;
+      font-size: 19px;
       color: #cbd5e1;
     }
+
+    /* ===== BOX ===== */
 
     .box {
       background: #101a2c;
       border: 1px solid #26364f;
       border-radius: 25px;
+
       padding: 30px;
       margin-bottom: 25px;
     }
 
-    h2 {
+    .box h2 {
       color: #38bdf8;
+      margin-top: 0;
     }
+
+    /* ===== GIF ===== */
+
+    .robot-gif {
+      display: block;
+      width: 180px;
+      margin: 20px auto;
+      border-radius: 15px;
+    }
+
+    /* ===== SKILLS ===== */
 
     .skills {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
     }
 
     .skill {
-      padding: 20px;
-      background: #162238;
+      background: white;
       border-radius: 15px;
-      border: 1px solid #26364f;
+      padding: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 130px;
     }
+
+    .skill img {
+      max-width: 100%;
+      max-height: 90px;
+      object-fit: contain;
+    }
+
+    /* ===== GITHUB ===== */
 
     .github {
       display: inline-block;
-      padding: 15px 25px;
-      border-radius: 15px;
+
+      padding: 14px 25px;
+
       background: #162238;
       color: white;
-      text-decoration: none;
+
       border: 1px solid #26364f;
+      border-radius: 15px;
+
+      text-decoration: none;
     }
 
     .github:hover {
-      border-color: #38bdf8;
       color: #38bdf8;
+      border-color: #38bdf8;
     }
 
+    /* ===== MOBILE ===== */
+
     @media (max-width: 700px) {
-      .skills {
-        grid-template-columns: 1fr;
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
       }
 
       .hero h1 {
-        font-size: 32px;
+        font-size: 30px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -96,45 +154,115 @@
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <section class="hero">
-      <h1>Hello, I'm Apilak Thongthaisong</h1>
-      <p>Computer Engineering Student</p>
-      <p>Code the future. Create your own path.</p>
-    </section>
+  <!-- HEADER -->
 
-    <section class="box">
-      <h2>About Me</h2>
+  <section class="hero">
+
+    <!-- เปลี่ยน profile.png เป็นชื่อรูปของคุณ -->
+    <img
+      class="profile"
+      src="profile.png"
+      alt="Profile">
+
+    <div>
+      <h1>Hello, I'm Apilak</h1>
+
       <p>
-        I'm interested in programming, web development
-        and technology.
+        Computer Engineering Student
       </p>
-    </section>
 
-    <section class="box">
-      <h2>Learning Skills</h2>
+      <p>
+        Code the future. Create your own path.
+      </p>
+    </div>
 
-      <div class="skills">
-        <div class="skill">01 &nbsp; HTML & CSS</div>
-        <div class="skill">02 &nbsp; JavaScript</div>
-        <div class="skill">03 &nbsp; Git & GitHub</div>
-        <div class="skill">04 &nbsp; Backend & API</div>
-        <div class="skill">05 &nbsp; Database & SQL</div>
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section class="box">
+
+    <h2>About Me</h2>
+
+    <p>
+      I'm interested in programming, web development
+      and technology.
+    </p>
+
+    <p>
+      I'm currently learning HTML, CSS, JavaScript,
+      Git and GitHub.
+    </p>
+
+  </section>
+
+
+  <!-- ROBOT GIF -->
+
+  <section class="box">
+
+    <h2>My Journey</h2>
+
+    <img
+      class="robot-gif"
+      src="หุ่นยนต์.gif"
+      alt="Robot GIF">
+
+    <p style="text-align:center;">
+      Learning, creating and improving every day.
+    </p>
+
+  </section>
+
+
+  <!-- LEARNING -->
+
+  <section class="box">
+
+    <h2>Learning Skills</h2>
+
+    <div class="skills">
+
+      <div class="skill">
+        <img src="lego-nxt.png" alt="LEGO Mindstorms NXT">
       </div>
-    </section>
 
-    <section class="box">
-      <h2>GitHub</h2>
+      <div class="skill">
+        <img src="lego-ev3.png" alt="LEGO Mindstorms EV3">
+      </div>
 
-      <a class="github"
-         href="https://github.com/apilak007"
-         target="_blank">
-        GitHub
-      </a>
-    </section>
+      <div class="skill">
+        <img src="microbit.png" alt="micro:bit">
+      </div>
 
-  </div>
+    </div>
 
+  </section>
+
+
+  <!-- GITHUB -->
+
+  <section class="box">
+
+    <h2>GitHub</h2>
+
+    <a
+      class="github"
+      href="https://github.com/apilak007"
+      target="_blank">
+
+      Visit My GitHub
+
+    </a>
+
+  </section>
+
+</div>
+
+</body>
+</html>
 </body>
 </html>
