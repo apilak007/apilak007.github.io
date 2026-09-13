@@ -1,17 +1,140 @@
- <title>Apilak Thongthaisong</title>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apilak Thongthaisong</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .hero {
+      padding: 50px 40px;
+      border: 1px solid #26364f;
+      border-radius: 30px;
+      background: #101a2c;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-size: 45px;
+      margin: 0 0 15px;
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #cbd5e1;
+    }
+
+    .box {
+      background: #101a2c;
+      border: 1px solid #26364f;
+      border-radius: 25px;
+      padding: 30px;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #38bdf8;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .skill {
+      padding: 20px;
+      background: #162238;
+      border-radius: 15px;
+      border: 1px solid #26364f;
+    }
+
+    .github {
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 15px;
+      background: #162238;
+      color: white;
+      text-decoration: none;
+      border: 1px solid #26364f;
+    }
+
+    .github:hover {
+      border-color: #38bdf8;
+      color: #38bdf8;
+    }
+
+    @media (max-width: 700px) {
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-  <h1>สวัสดีครับ ผมชื่อ อภิลัษณ์ ธงไธสง</h1>
+  <div class="container">
 
-  <p>
-    นักศึกษาวิศวกรรมคอมพิวเตอร์
-  </p>
+    <section class="hero">
+      <h1>Hello, I'm Apilak Thongthaisong</h1>
+      <p>Computer Engineering Student</p>
+      <p>Code the future. Create your own path.</p>
+    </section>
 
-  <p>
-    สนใจการพัฒนาเว็บไซต์ การเขียนโปรแกรม และเทคโนโลยี
-  </p>
+    <section class="box">
+      <h2>About Me</h2>
+      <p>
+        I'm interested in programming, web development
+        and technology.
+      </p>
+    </section>
+
+    <section class="box">
+      <h2>Learning Skills</h2>
+
+      <div class="skills">
+        <div class="skill">01 &nbsp; HTML & CSS</div>
+        <div class="skill">02 &nbsp; JavaScript</div>
+        <div class="skill">03 &nbsp; Git & GitHub</div>
+        <div class="skill">04 &nbsp; Backend & API</div>
+        <div class="skill">05 &nbsp; Database & SQL</div>
+      </div>
+    </section>
+
+    <section class="box">
+      <h2>GitHub</h2>
+
+      <a class="github"
+         href="https://github.com/apilak007"
+         target="_blank">
+        GitHub
+      </a>
+    </section>
+
+  </div>
 
 </body>
 </html>
