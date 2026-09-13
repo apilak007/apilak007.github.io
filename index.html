@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Apilak | Portfolio</title>
+<title>Apilak007 | Portfolio</title>
 
 <style>
 
@@ -19,296 +20,425 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    color: white;
+    font-family: "Courier New", monospace;
+    color: #e9ddff;
     background:
-        radial-gradient(circle at 15% 30%, rgba(255, 70, 160, 0.25), transparent 35%),
-        radial-gradient(circle at 85% 25%, rgba(100, 80, 255, 0.25), transparent 35%),
-        linear-gradient(120deg, #261326, #17152c, #171636);
+        radial-gradient(circle at 90% 5%, rgba(130, 40, 255, 0.25), transparent 30%),
+        radial-gradient(circle at 5% 80%, rgba(180, 40, 255, 0.18), transparent 30%),
+        linear-gradient(135deg, #090512, #10071d 50%, #08030f);
+
     min-height: 100vh;
 }
 
-/* NAVBAR */
+
+/* ================= NAVBAR ================= */
 
 .navbar {
-    width: 85%;
+    width: 92%;
     max-width: 1100px;
-    margin: 25px auto;
-    padding: 15px 22px;
+
+    margin: 18px auto;
+    padding: 13px 20px;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
-    background: rgba(20, 15, 35, 0.65);
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 40px;
+    border: 1px solid #7135b8;
+    border-radius: 30px;
 
-    backdrop-filter: blur(15px);
+    background: rgba(15, 7, 25, 0.75);
+
+    box-shadow:
+        0 0 20px rgba(150, 60, 255, 0.15);
+
+    backdrop-filter: blur(12px);
 }
 
 .logo {
-    font-size: 18px;
+    color: #d49aff;
     font-weight: bold;
+    font-size: 17px;
 }
 
 .nav-links {
     display: flex;
-    gap: 28px;
+    gap: 25px;
 }
 
 .nav-links a {
-    color: #cfc7dc;
+    color: #bca9d4;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
-    color: white;
+    color: #d879ff;
 }
 
-/* HERO */
+
+/* ================= MAIN ================= */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* ================= HERO ================= */
 
 .hero {
-    width: 85%;
-    max-width: 1100px;
-    min-height: 650px;
-    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 55px;
+}
 
+.profile-area {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 60px;
+    gap: 25px;
 }
 
-.hero-left {
-    width: 55%;
-}
 
-.badge {
-    display: inline-block;
-
-    padding: 10px 18px;
-    margin-bottom: 25px;
-
-    border-radius: 30px;
-
-    background: rgba(255,255,255,0.55);
-    color: #d88db7;
-
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-h1 {
-    font-size: clamp(55px, 7vw, 90px);
-    line-height: 0.95;
-    margin-bottom: 20px;
-
-    background: linear-gradient(
-        90deg,
-        #e27db6,
-        #d99adf,
-        #8da9ed
-    );
-
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.subtitle {
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.1;
-    margin-bottom: 25px;
-}
-
-.description {
-    color: #c9c2d0;
-    line-height: 1.8;
-    max-width: 600px;
-}
-
-/* BUTTONS */
-
-.buttons {
-    display: flex;
-    gap: 12px;
-    margin-top: 30px;
-}
-
-.btn {
-    padding: 14px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 14px;
-
-    border: 1px solid rgba(255,255,255,0.2);
-}
-
-.btn-primary {
-    background: linear-gradient(90deg, #dc82bc, #a88bdc);
-}
-
-.btn-secondary {
-    background: rgba(255,255,255,0.03);
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-}
-
-/* IMAGE */
-
-.hero-right {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-}
-
-.image-circle {
-    width: 330px;
-    height: 330px;
-
-    border-radius: 50%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,255,255,0.8),
-            rgba(210,180,240,0.45)
-        );
-
-    border: 1px solid rgba(255,255,255,0.35);
-
-    box-shadow:
-        0 0 50px rgba(210,130,230,0.25),
-        inset 0 0 50px rgba(255,255,255,0.3);
-}
+/* PROFILE */
 
 .profile {
-    width: 210px;
-    height: 210px;
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border: 2px solid #b44cff;
 
-    border: 8px solid rgba(255,255,255,0.75);
-
-    box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+    box-shadow:
+        0 0 20px rgba(180, 76, 255, 0.5);
 }
 
-/* CARDS */
 
-.cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+/* INTRO */
 
-    margin-top: 35px;
+.intro {
+    flex: 1;
 }
 
-.card {
-    padding: 22px;
+.small-title {
+    color: #bb65ff;
 
-    border-radius: 18px;
-
-    background: rgba(20,15,35,0.45);
-    border: 1px solid rgba(255,255,255,0.12);
-
-    backdrop-filter: blur(10px);
-}
-
-.card-number {
-    color: #e49ac4;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
+
+    letter-spacing: 1px;
+
     margin-bottom: 12px;
+
+    text-transform: uppercase;
 }
 
-.card p {
-    color: #aaa2b4;
-    font-size: 13px;
+h1 {
+    font-family: Arial, sans-serif;
+
+    font-size: clamp(42px, 7vw, 70px);
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+
+    color: #f0ddff;
+
+    text-shadow:
+        0 0 25px rgba(190, 90, 255, 0.25);
 }
 
-/* ABOUT */
+.subtitle {
+    font-family: Arial, sans-serif;
 
-section {
-    width: 85%;
-    max-width: 1100px;
-    margin: 80px auto;
+    font-size: 20px;
+
+    font-weight: bold;
+
+    color: #d8c4ed;
+
+    max-width: 650px;
+}
+
+.intro-text {
+    margin-top: 30px;
+
+    color: #b49cc9;
+
+    line-height: 1.8;
+
+    font-size: 14px;
+
+    max-width: 700px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.github-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 11px 20px;
+
+    border: 1px solid #8f3ee8;
+
+    border-radius: 25px;
+
+    color: #e6cfff;
+
+    text-decoration: none;
+
+    background: rgba(120, 40, 200, 0.12);
+
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    background: #8735d0;
+
+    color: white;
+
+    box-shadow:
+        0 0 20px rgba(170, 70, 255, 0.5);
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    margin-top: 45px;
+    margin-bottom: 55px;
 }
 
 .section-title {
-    color: #cda0bf;
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
+    display: flex;
 
-.section-heading {
-    font-size: 40px;
+    align-items: center;
+
+    gap: 15px;
+
+    color: #c76dff;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
     margin-bottom: 20px;
 }
 
-.section-text {
-    color: #c5bdca;
-    line-height: 1.8;
-    max-width: 750px;
+.section-title::after {
+    content: "";
+
+    height: 1px;
+
+    flex: 1;
+
+    background: linear-gradient(
+        90deg,
+        #7135b8,
+        transparent
+    );
 }
 
-/* MOBILE */
 
-@media (max-width: 800px) {
+/* ================= LEARNING ================= */
 
-    .navbar {
-        width: 92%;
-    }
+.learning-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.learning-item {
+    padding: 12px 15px;
+
+    border-left: 2px solid #a846ff;
+
+    color: #c9b8da;
+
+    background: rgba(100, 40, 150, 0.05);
+
+    transition: 0.3s;
+}
+
+.learning-item:hover {
+    border-left-color: #e58aff;
+
+    background: rgba(160, 60, 220, 0.1);
+
+    transform: translateX(5px);
+}
+
+
+/* ================= EXPERIENCE ================= */
+
+.experience-box {
+    width: 100%;
+    max-width: 500px;
+
+    padding: 25px;
+
+    border: 1px dashed #7d3bc0;
+
+    border-radius: 15px;
+
+    background: rgba(90, 30, 130, 0.08);
+
+    color: #bca9cc;
+
+    line-height: 1.8;
+
+    text-align: center;
+}
+
+
+/* ================= SKILLS ================= */
+
+.skills {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+.skill {
+    min-height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    border: 1px solid #54258a;
+
+    border-radius: 15px;
+
+    background: rgba(60, 20, 90, 0.12);
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    border-color: #b54dff;
+
+    box-shadow:
+        0 0 20px rgba(170, 60, 255, 0.2);
+
+    transform: translateY(-3px);
+}
+
+.skill img {
+    max-width: 100%;
+    max-height: 75px;
+
+    object-fit: contain;
+}
+
+
+/* ================= CONNECTION ================= */
+
+.connection {
+    padding: 25px;
+
+    display: grid;
+
+    grid-template-columns: 200px 1fr;
+
+    gap: 30px;
+
+    border: 1px solid #63319a;
+
+    border-radius: 15px;
+
+    background: rgba(80, 30, 120, 0.08);
+}
+
+.connection-label {
+    color: #a991b8;
+}
+
+.connection-link {
+    color: #ca70ff;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.connection-link:hover {
+    color: #edb0ff;
+}
+
+.connection p {
+    margin-top: 10px;
+
+    color: #9683a9;
+
+    line-height: 1.7;
+
+    font-size: 13px;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+
+    padding: 40px 0;
+
+    color: #685575;
+
+    font-size: 12px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
 
     .nav-links {
         display: none;
     }
 
-    .hero {
-        width: 90%;
+    .profile-area {
         flex-direction: column;
-        text-align: center;
-        padding-top: 60px;
+
+        align-items: flex-start;
     }
 
-    .hero-left,
-    .hero-right {
-        width: 100%;
+    h1 {
+        font-size: 48px;
     }
 
-    .description {
-        margin: auto;
+    .subtitle {
+        font-size: 18px;
     }
 
-    .buttons {
-        justify-content: center;
-    }
-
-    .cards {
+    .skills {
         grid-template-columns: 1fr;
     }
 
-    .image-circle {
-        width: 280px;
-        height: 280px;
-    }
+    .connection {
+        grid-template-columns: 1fr;
 
-    .profile {
-        width: 180px;
-        height: 180px;
+        gap: 10px;
     }
 
 }
@@ -316,110 +446,62 @@ section {
 </style>
 </head>
 
+
 <body>
 
-<!-- NAVBAR -->
+
+<!-- ================= NAVBAR ================= -->
 
 <nav class="navbar">
 
     <div class="logo">
-        👑 Apilak
+        👑 Apilak007
     </div>
 
     <div class="nav-links">
+
         <a href="#about">About</a>
-        <a href="#skills">Interests</a>
+
+        <a href="#interests">Interests</a>
+
         <a href="#learning">Learning</a>
+
         <a href="#works">Works</a>
+
     </div>
 
 </nav>
 
 
-<!-- HERO -->
 
-<main class="hero">
-
-    <div class="hero-left">
-
-        <div class="badge">
-            ✦ WELCOME TO MY DIGITAL WORLD
-        </div>
-
-        <h1>
-            Apilak
-        </h1>
-
-        <div class="subtitle">
-            Computer<br>
-            Engineering Student
-        </div>
-
-        <p class="description">
-            กำลังเปลี่ยนความสงสัย ความคิด และไอเดียเล็ก ๆ
-            ให้กลายเป็นสิ่งที่สร้างขึ้นมาได้จริง ✦
-        </p>
-
-        <p class="description">
-            สนใจ Programming, Web Development, IoT
-            และเทคโนโลยีที่สามารถนำไปสร้างผลงานจริง
-        </p>
+<div class="container">
 
 
-        <div class="buttons">
+<!-- ================= HERO ================= -->
 
-            <a
-                class="btn btn-primary"
-                href="https://github.com/apilak007"
-                target="_blank"
-            >
-                ♡ Explore my GitHub
-            </a>
+<section class="hero">
 
-            <a
-                class="btn btn-secondary"
-                href="#about"
-            >
-                ✦ Get to know me
-            </a>
+    <div class="profile-area">
 
-        </div>
+        <img
+            src="profile.png"
+            class="profile"
+            alt="Apilak Profile"
+        >
 
+        <div class="intro">
 
-        <!-- CARDS -->
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="card-number">
-                    01
-                </div>
-
-                <p>
-                    Computer Engineering
-                </p>
+            <div class="small-title">
+                First-year Computer Engineering Student
             </div>
 
+            <h1>
+                apilak007
+            </h1>
 
-            <div class="card">
-                <div class="card-number">
-                    IoT
-                </div>
-
-                <p>
-                    Curious Explorer
-                </p>
-            </div>
-
-
-            <div class="card">
-                <div class="card-number">
-                    ∞
-                </div>
-
-                <p>
-                    Always Learning
-                </p>
+            <div class="subtitle">
+                I want to develop myself to move into
+                an advanced and stable tech career.
             </div>
 
         </div>
@@ -427,85 +509,240 @@ section {
     </div>
 
 
-    <!-- PROFILE IMAGE -->
+    <p class="intro-text">
+        Hi!, I'm apilak. I'm a Computer Engineering student.
+        I enjoy learning programming, technology, networking,
+        IoT and creating things through code. ✦
+    </p>
 
-    <div class="hero-right">
 
-        <div class="image-circle">
+    <a
+        href="https://github.com/apilak007"
+        target="_blank"
+        class="github-btn"
+    >
+        GitHub →
+    </a>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="section"
+    id="about"
+>
+
+    <div class="section-title">
+        ABOUT ME
+    </div>
+
+    <p class="intro-text">
+        I'm currently studying Computer Engineering
+        and learning how technology works.
+        My goal is to continuously improve my skills
+        and create useful projects.
+    </p>
+
+</section>
+
+
+
+<!-- ================= INTERESTS ================= -->
+
+<section
+    class="section"
+    id="interests"
+>
+
+    <div class="section-title">
+        INTERESTS
+    </div>
+
+    <div class="learning-list">
+
+        <div class="learning-item">
+            Programming
+        </div>
+
+        <div class="learning-item">
+            Web Development
+        </div>
+
+        <div class="learning-item">
+            IoT & Electronics
+        </div>
+
+        <div class="learning-item">
+            Computer Technology
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= LEARNING ================= -->
+
+<section
+    class="section"
+    id="learning"
+>
+
+    <div class="section-title">
+        LEARNING
+    </div>
+
+    <div class="learning-list">
+
+        <div class="learning-item">
+            HTML, CSS and JavaScript
+        </div>
+
+        <div class="learning-item">
+            C Programming
+        </div>
+
+        <div class="learning-item">
+            Git & GitHub
+        </div>
+
+        <div class="learning-item">
+            LEGO Mindstorms & micro:bit
+        </div>
+
+        <div class="learning-item">
+            Networking & IoT
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section">
+
+    <div class="section-title">
+        TECHNOLOGIES
+    </div>
+
+    <div class="skills">
+
+        <div class="skill">
 
             <img
-                class="profile"
-                src="profile.png"
-                alt="Apilak Profile"
+                src="lego-nxt.png"
+                alt="LEGO NXT"
+            >
+
+        </div>
+
+
+        <div class="skill">
+
+            <img
+                src="lego-ev3.png"
+                alt="LEGO EV3"
+            >
+
+        </div>
+
+
+        <div class="skill">
+
+            <img
+                src="microbit.png"
+                alt="micro:bit"
             >
 
         </div>
 
     </div>
 
-</main>
+</section>
 
 
-<!-- ABOUT -->
 
-<section id="about">
+<!-- ================= WORKS ================= -->
+
+<section
+    class="section"
+    id="works"
+>
 
     <div class="section-title">
-        01 · A LITTLE ABOUT ME
+        EXPERIENCE
     </div>
 
-    <h2 class="section-heading">
-        About Me
-    </h2>
+    <div class="experience-box">
 
-    <p class="section-text">
-        ผมสนใจด้านคอมพิวเตอร์ การเขียนโปรแกรม
-        การสร้างเว็บไซต์ และเทคโนโลยีใหม่ ๆ
-        โดยกำลังเรียนรู้และพัฒนาทักษะของตัวเอง
-        ผ่านการทำโปรเจกต์ต่าง ๆ
-    </p>
+        🚀
+
+        <br><br>
+
+        ยังไม่มีผลงานในหน้าที่นี้
+        กำลังเรียนรู้อยู่
+        แล้วจะกลับมาเพิ่มเรื่อย ๆ
+
+    </div>
 
 </section>
 
 
-<!-- LEARNING -->
 
-<section id="learning">
+<!-- ================= CONNECTION ================= -->
+
+<section class="section">
 
     <div class="section-title">
-        02 · WHAT I'M LEARNING
+        CONNECTION INFORMATION FOR THIS PAGE
     </div>
 
-    <h2 class="section-heading">
-        Learning
-    </h2>
 
-    <p class="section-text">
-        HTML · CSS · JavaScript · C · Git · GitHub
-        · LEGO Mindstorms · micro:bit · IoT
-    </p>
+    <div class="connection">
+
+        <div class="connection-label">
+            Domain name
+        </div>
+
+
+        <div>
+
+            <a
+                href="https://apilak007.github.io"
+                target="_blank"
+                class="connection-link"
+            >
+                🔗 apilak007.github.io
+            </a>
+
+            <p>
+                This page is hosted on GitHub Pages.
+                You can visit my profile and projects here.
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- WORKS -->
 
-<section id="works">
+<footer>
 
-    <div class="section-title">
-        03 · MY WORKS
-    </div>
+    © 2026 Apilak007 · Built with HTML & CSS
 
-    <h2 class="section-heading">
-        Works
-    </h2>
+</footer>
 
-    <p class="section-text">
-        Projects and experiments that I create
-        while learning and improving my skills.
-    </p>
 
-</section>
+</div>
 
 </body>
 </html>
